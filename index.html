@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munfam | Portfolio & Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        header {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem 5rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: white;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #1e293b;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .card h3 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+        a {
+            color:#38bdf8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Munfam</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Hi, I'm Munfam</h1>
+        <p class="subtitle">Welcome to my personal space. This site is my landing page, project portfolio, and blog where I share my work, ideas and notes.</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+        <a href="#blog" class="btn btn-outline">Read Blog</a>
+    </div>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Describe your first project here. You can add screenshots, links and tech stack later.</p>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Showcase your second project, demo link and source code on GitHub.</p>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Add more projects as you build them.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>My First Blog Post</h3>
+                <p>Write your thoughts, tutorials or notes here. Later you can split this into separate markdown pages.</p>
+            </div>
+            <div class="card">
+                <h3>Second Article</h3>
+                <p>Share learning notes, tips, or project updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via GitHub or email.</p>
+        <p style="margin-top:1rem">GitHub: <a href="https://github.com/munfam" target="_blank">github.com/munfam</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Munfam | Hosted on GitHub Pages</p>
+    </footer>
+</body>
+</html>
